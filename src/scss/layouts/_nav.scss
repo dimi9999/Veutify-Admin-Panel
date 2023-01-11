@@ -1,0 +1,24 @@
+// Navigation drawer
+aside {
+    & .v-navigation-drawer__content {
+        background-color: $primary !important;
+        font-size: 16px;
+    }
+
+    & .nav-menu {
+        display: block;
+        font-size: 16px;
+        padding: 15px;
+        font-weight: 500;
+
+        & .v-list__tile {
+            font-size: 16px !important;
+        }
+
+        & i {
+            @include inline-block;
+            margin-right: 20px;
+            vertical-align: top !important;
+        }
+    }
+}

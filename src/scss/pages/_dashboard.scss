@@ -1,0 +1,45 @@
+// Dashboard 
+.dashboard {
+    & .container {
+        max-width: 1500px;
+    }
+
+    .project.complete {
+        border-left: 4px solid $success;
+    }
+
+    .project.ongoing {
+        border-left: 4px solid $orange;
+    }
+
+    .project.overdue {
+        border-left: 4px solid $tomato;
+    }
+
+    // Status
+    .v-chip.complete {
+        background: $success;
+    }
+
+    .v-chip.ongoing {
+        background: $info;
+    }
+
+    .v-chip.overdue {
+        background: $error;
+    }
+}
+
+@media only screen and (max-width: $breakpoint-mobile) {
+    .dashboard {
+        & .v-card {
+            & .v-chip {
+                margin: 0;
+            }
+
+            & .right {
+                float: none !important;
+            }
+        }
+    }
+}
